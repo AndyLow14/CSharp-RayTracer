@@ -1,0 +1,46 @@
+Material "RedMat" Diffuse (1, .5, .5) 1
+Material "GreenMat" Diffuse (.5, 1, .5) 1
+Material "BlueMat" Diffuse (.5, .5, 1) 1
+Material "PurpleMat" Diffuse (1, .5, 1) 1
+Material "YellowMat" Diffuse (1, 1, .5) 1
+Material "OrangeMat" Diffuse (1, .7, .2) 1
+Material "CyanMat" Diffuse (.5, 1, 1) 1
+Material "GreyMat" Diffuse (1, 1, 1) 1
+Material "BlackMat" Diffuse (.3, .3, .3) 1
+
+Material "GlossyPurple" Glossy (1, .5, 1) 1
+Material "GlossyGreen" Glossy (.5, 1, .5) 1
+Material "GlossyCyan" Glossy (.5, 1, 1) 1.4
+
+Material "MirrorMat" Reflective (0, 0, 0) 1
+Material "GlassMat" Refractive (0, 0, 0) 1.4
+
+PointLight "Light1" (0, 0.8, 1.5) (.5, .5, .5)
+PointLight "Light2" (-0.5, 0.3, 0.3) (.5, .5, .5)
+
+Sphere "SphereGlossyPurple" (.3, .02, 1.3) 0.22 "GlossyPurple"
+Sphere "SphereMirror" (.03, -.07, 0.9) .13 "MirrorMat"
+Sphere "SphereGlass" (-.11, -.125, .65) .08 "GlassMat"
+Sphere "SphereRed" (-.14, -.15, .45) .05 "RedMat"
+
+Sphere "SpherePurple" (.07, -.17, .3) .03 "PurpleMat"
+Sphere "SphereCyan" (.07, -.17, .45) .03 "GlossyCyan"
+Sphere "SphereYellow" (.16, -.17, .6) .03 "YellowMat"
+Sphere "SphereGreen" (.26, -.17, .7) .03 "GlossyGreen"
+Sphere "SphereOrange" (.39, -.17, .8) .03 "OrangeMat"
+
+Plane "Floor" (0, -.2, 0) (0, 1, 0) "GreyMat"
+Plane "Roof" (0, 1, 0) (0, -1, 0) "GreyMat"
+
+Triangle "LeftWallA" (-1, -1, 0) (-1, 1, 0) (-1, 1, 3) "RedMat"
+Triangle "LeftWallB" (-1, -1, 0) (-1, 1, 3) (-1, -1, 3)  "RedMat"
+
+Triangle "RightWallA" (1, 1, 0) (1, -1, 0) (1, 1, 3) "BlueMat"
+Triangle "RightWallB" (1, 1, 3) (1, -1, 0) (1, -1, 3)  "BlueMat"
+
+Triangle "RearWallA" (-1, 1, 0) (-1, -1, 0) (1, 1, 0) "BlackMat"
+Triangle "RearWallB" (1, 1, 0) (-1, -1, 0) (1, -1, 0) "BlackMat"
+
+Triangle "FarWallA" (-1, -1, 3) (-1, 1, 3) (1, 1, 3) "GreyMat"
+Triangle "FarWallB" (-1, -1, 3) (1, 1, 3) (1, -1, 3) "GreyMat"
+
