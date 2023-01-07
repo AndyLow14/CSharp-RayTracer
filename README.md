@@ -1,4 +1,4 @@
-# COMP30019 - Ray Tracer
+# c# Ray Tracer
 
 **Name:** Andy Jun Cheng Low \
 **Student Number:** 1136438 \
